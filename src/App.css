@@ -75,9 +75,9 @@ section {
 }
 
 .Header .navbar a {
-  color: white !important;
+  color: #2b276d !important;
   font-weight: 500;
-  text-shadow: -1px 0 #e81c5a, 0 1px #e81d5b, 1px 0 #e71c5a, 0 -1px #e91c5b;
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
 
