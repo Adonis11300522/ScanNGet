@@ -5,7 +5,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import OfferPage from "./pages/offer";
 import LoyaltyPage from "./pages/loyalty";
-
+import { AuthPage } from "./pages/auth";
 
 function App() {
   
@@ -15,6 +15,7 @@ function App() {
        <Route path="/" element={<Home/>} />
        <Route path="/offers" element={<OfferPage/>} />
        <Route path="/loyalties" element={<LoyaltyPage/>} />
+       <Route path="/login" element={<AuthPage/>} />
      </Routes>
    </BrowserRouter>
   );

@@ -1,5 +1,5 @@
-import React from "react";
-import {Card, Image, Nav} from "react-bootstrap";
+import React, { useState } from "react";
+import {Card, Image, Nav, Button} from "react-bootstrap";
 import { FaListUl } from 'react-icons/fa';
 import { BsHeart } from "react-icons/bs";
 
@@ -52,11 +52,15 @@ export function RecipeCard() {
     );
 }
 
-export function CategoryCard({cate_name, cate_image}) {
+export function CategoryCard({cate_name, cate_image, actived, setActived, key, data}) {
+    // const [selected, setSelected] = useState('inactived');
     return(
         <div className="CategoryCard">
-            <Card className="mx-auto" style={{width: '10rem'}}>
-                <Card.Body>
+            <Card data={data} className="mx-auto" id={actived == data ? 'actived' : 'inactived'} style={{width: '10rem'}} onClick={() => {                
+                   console.log(actived, data);
+                   setActived(data);
+            }}>
+                <Card.Body className="card-body">
                     <Card.Img className="rounded-4 shadow" src={cate_image}/>
                     <Card.Subtitle className="text-center mt-2">{cate_name}</Card.Subtitle>
                 </Card.Body>

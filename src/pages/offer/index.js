@@ -1,8 +1,11 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Image } from "react-bootstrap";
 import { OfferCard } from "../../components/cards";
 import Categories from "../../components/category";
 import Layout from "../../components/layout";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 function OfferPage() {
     const offer_data = [
         { name: "Bio Rice Almond Milk", attr: "20L", price: "5.00", state:"", image: "../../assets/images/categories/1.webp"},
@@ -39,6 +42,16 @@ function OfferPage() {
     <>
         <Layout>
             <div className="banner-bg"></div>
+            <Carousel className="offers-slider container">
+                <Row>
+                    <Col lg={6} md={6} sm={12}>
+                        <Image src="assets/images/banner/man1.png"/>
+                    </Col>
+                    <Col lg={6} md={6} sm={12} className="py-5">
+                        sdfsdfsdf
+                    </Col>
+                </Row>
+            </Carousel>
             <Categories/>
             <Container>
                 <div className="banner-title">Beverages</div>

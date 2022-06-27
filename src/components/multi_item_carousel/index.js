@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -6,6 +6,7 @@ import { OfferCard, LoayltyCard, CategoryCard } from "../cards";
 import { SectionTitle } from "../tags/intex";
 
 function MultiItemCarousel ({type}) {
+
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -134,6 +135,7 @@ function MultiItemCarousel ({type}) {
         {name:"Alphamega", image:"/assets/images/banner/buy.webp"},
     ];
 
+    const [lastActived, setLastActived] = useState(-1);
 
     switch (type) {
         case 'Offers':
@@ -143,7 +145,7 @@ function MultiItemCarousel ({type}) {
                      <SectionTitle className="my-2">{type}</SectionTitle>
                      <Carousel responsive={offer_responsive}>
                         {offer_data.map((item, index) => (
-                                <OfferCard offer_name={item.name} offer_image={item.image} offer_attr={item.attr} offer_price={item.price}/>
+                                <OfferCard  key={index} offer_name={item.name} offer_image={item.image} offer_attr={item.attr} offer_price={item.price}/>
                         ))}
                      </Carousel>
                  </Container>     
@@ -156,7 +158,7 @@ function MultiItemCarousel ({type}) {
                         <SectionTitle className="my-2">{type}</SectionTitle>
                         <Carousel responsive={category_responsive}>
                             {cate_data.map((item, index) => (
-                                <CategoryCard cate_name={item.name} cate_image={item.image}/>
+                                <CategoryCard actived={lastActived} setActived={setLastActived} key={index} data={index} cate_name={item.name} cate_image={item.image} />
                             ))}
                         </Carousel>
                     </Container>     
@@ -169,7 +171,7 @@ function MultiItemCarousel ({type}) {
                         <SectionTitle className="my-2">{type}</SectionTitle>
                         <Carousel responsive={responsive}>
                             {loyalty_data.map((item, index) => (
-                                <LoayltyCard loy_name={item.name} loy_image={item.image}/>
+                                <LoayltyCard key={index} loy_name={item.name} loy_image={item.image}/>
                             ))}
                         </Carousel>
                     </Container>     
@@ -182,7 +184,7 @@ function MultiItemCarousel ({type}) {
                         <SectionTitle className="my-2">{type}</SectionTitle>
                         <Carousel autoPlay="true" responsive={partner_responsive}>
                             {partner_data.map((item, index) => (
-                                <div className="partner-img">
+                                <div className="partner-img"  key={index}>
                                     <Image src={item.image}/>
                                 </div>
                             ))}

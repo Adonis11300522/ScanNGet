@@ -38,7 +38,9 @@ body {
 	max-height: 100vw;
 	transform: translate(-50%, -50%);
 	
-	background: radial-gradient(ellipse at center, rgba(237, 28, 90,0.05) 25%,rgba(237, 28, 90,0.15) 53%,rgba(237, 28, 90,0.05) 56%,rgba(237, 28, 90,0) 70%);
+	/* background: radial-gradient(ellipse at center, rgba(237, 28, 90,0.05) 25%,rgba(237, 28, 90,0.15) 53%,rgba(237, 28, 90,0.05) 56%,rgba(237, 28, 90,0) 70%); */
+	background: radial-gradient(ellipse at center, #2a276d00 25%,#3AC6F3 53%,rgba(237, 28, 90,0.05) 56%,#2c27c100 70%);
+	/* background: linear-gradient(10deg,#2b276d 30%,#3AC6F3 ) 0 0 /100% no-repeat,#2B27C1; */
 	z-index: 200;
 	pointer-events: none;
 }
