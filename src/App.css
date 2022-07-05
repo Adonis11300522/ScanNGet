@@ -685,3 +685,9 @@ section {
 .flyers-list .flyer-item p {
   color: #303030;
 }
+
+.signin-btn {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
