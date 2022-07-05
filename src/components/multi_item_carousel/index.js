@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { OfferCard, LoayltyCard, CategoryCard } from "../cards";
+import { OfferCard, LoayltyCard, CategoryCard, RecipeCard } from "../cards";
 import { SectionTitle } from "../tags/intex";
 
 function MultiItemCarousel ({type}) {
@@ -20,6 +20,26 @@ function MultiItemCarousel ({type}) {
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 3
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
+
+    const recipe_responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 3
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 2
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -142,7 +162,7 @@ function MultiItemCarousel ({type}) {
             return (
                 <section>
                   <Container className="MultiItemCarousel">
-                     <SectionTitle className="my-2">{type}</SectionTitle>
+                     {/* <SectionTitle className="my-2">{type}</SectionTitle> */}
                      <Carousel responsive={offer_responsive}>
                         {offer_data.map((item, index) => (
                                 <OfferCard  key={index} offer_name={item.name} offer_image={item.image} offer_attr={item.attr} offer_price={item.price}/>
@@ -192,7 +212,18 @@ function MultiItemCarousel ({type}) {
                     </Container>     
                 </section>   
             )                 
-    
+        case 'Recipes':
+            return (
+                <section>
+                    <Container className="MultiItemCarousel">
+                        <Carousel responsive={recipe_responsive}>
+                            {offer_data.map((item, index) => (
+                                    <RecipeCard  key={index} offer_name={item.name} offer_image={item.image} offer_attr={item.attr} offer_price={item.price}/>
+                            ))}
+                        </Carousel>
+                    </Container>     
+                </section>   
+            )  
         default:
             break;
     }

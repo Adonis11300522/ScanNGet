@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Container, Image, Nav, Row } from "react-bootstrap";
 
-function Footer() {
+function Footer() { 
+
     return (
         <section className="Footer py-5 mt-5" style={{background: "url('/assets/images/banner/footer.jpg')"}}>
           <Container>
@@ -27,6 +28,7 @@ function Footer() {
                 </Col>
               <Col lg={3} md={3} sm={12} className="row text-center">
                 <div className="footer-title">GET IN TOUCH</div>
+                  
                   <Col lg={4} md={4} sm={12} className="text-center">
                     <Image src="/assets/images/banner/1.webp" className="mb-2" width="100%"/>
                   </Col>

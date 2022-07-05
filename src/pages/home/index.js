@@ -13,13 +13,10 @@ function Home() {
         <Layout>
           <TopBanner/>
           <Categories/>
-          <IntroBanner/>          
           <Offers/>
-          <WorkBanner/>
           <Loyalty/>
           <DownloadBanner/>
           <PartnerBanner/>
-          <SubscribeBanner/>
         </Layout>
     </>
   );

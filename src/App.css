@@ -249,6 +249,49 @@ section {
   width: 30rem !important;
  }
 
+ .offers-slider p:last-child {
+  color: #2b276d;
+ }
+
+ .offers-slider .carousel-status {
+  display: none;
+ }
+
+
+ .top-work-slider .carousel.slide,
+ .top-work-slider .carousel.slide .carousel-inner,
+ .top-work-slider .carousel.slide .carousel-inner .carousel-item {
+  height: 100%;
+ } 
+
+ .top-work-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption {
+  color: white;
+  right: unset;
+  bottom: unset;
+  left: unset;
+ }
+
+ .top-work-slider .carousel.slide .carousel-item h1 {
+  color: white;
+  color: white;
+    position: relative;
+    z-index: 2;
+    font-size: 6rem;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    transform: rotate(-10deg);
+    text-shadow: 1px 1px hsl(216deg 47% 42%), 2px 2px hsl(212deg 50% 43%), 3px 3px hsl(212deg 48% 44%), 4px 4px hsl(210deg 50% 46%), 5px 5px hsl(205deg 56% 47%), 6px 6px hsl(203deg 57% 49%), 7px 7px hsl(201deg 58% 50%), 8px 8px hsl(201deg 61% 51%), 9px 9px hsl(200deg 63% 52%), 10px 10px hsl(197deg 77% 56%), 10px 10px 30px rgb(52 102 162);
+ }
+
+ .top-work-slider .carousel.slide .carousel-item p {
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+ }
+
+ .top-work-slider .carousel.slide .carousel-item img {
+  
+ }
 
 /* ***********Carousel End************* */
 
@@ -417,4 +460,228 @@ section {
   top: 165px;
   right: -155px;
   z-index: 2;
+}
+
+.search_bar span.input-group-text {
+  background: none;
+  color: #6c757d;
+}
+
+.search_bar .input-group input.form-control {
+  border-right: none;
+}
+
+.filter_price .input-range__track--active {
+  background: linear-gradient(10deg, #2b276d 30%, #ed1c5a) 0% 0% / 100% no-repeat, #2b276d;
+}
+
+.filter_price .input-range__track .input-range__slider-container:nth-child(2) .input-range__slider{
+  background: #2b276d !important;
+  border: none;
+}
+
+.filter_price .input-range__track .input-range__slider-container:last-child div{
+  background: #ed1c5a;
+  border: none;
+}
+
+.filter_price .input-range__track .input-range__slider-container:last-child .input-range__label-container {
+    padding: 0.05rem 0.5rem !important;
+    background: #ed1c5a !important;
+    border-radius: 50px !important;
+    color: white !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.filter_price .input-range__track .input-range__slider-container:nth-child(2) .input-range__label-container {
+  padding: 0.05rem 0.5rem !important;
+  background: #2b276d !important;
+  border-radius: 50px !important;
+  color: white !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.filter_price .input-range__label.input-range__label--min span,
+.filter_price .input-range__label.input-range__label--max span {
+  display: none;
+  /* border: 1px solid;
+    padding: 0.05rem 0.5rem;
+    border-radius: 5px; */
+}
+
+.scannget-banner-bg {
+  /* background: url('/assets/images/banner/scannget.png'); */
+}
+
+.filter_price .input-range {
+  margin-top: 2rem;
+}
+
+.offers-item ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  margin-top: 2rem;
+
+}
+
+.offers-item ul li {
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.25rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  color: #2B276D;
+}
+
+.offers-item ul li a {
+  text-decoration: none;
+  color: #2B276D;
+}
+
+.Offer-detail-page .card,
+.loyalty-detail-page .card {
+  background: #ffffff6b;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+
+.loyalty-detail-page .loyalty-item-img img {
+  width: 100%;
+}
+
+.Offer-detail-page .card .card-body .offer-item-img .slider-wrapper,
+.loyalty-detail-page .loyalty-item-img img {
+  border: 4px dashed #595a5c;
+  border-radius: 50px;
+}
+
+.Offer-detail-page .card .card-body .offer-item-img .thumbs-wrapper ul.thumbs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Offer-detail-page .card .card-body .offer-item-img .thumbs-wrapper li.thumb {
+  height: 100px;
+    border: 2px dashed;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.Offer-detail-page .card .card-body .offer-item-img .slider-wrapper ul.slider li.slide img {
+  background: white;
+  /* border: 4px dashed #6c757d; */
+  /* border-radius: 50px; */
+  width: 100%;
+}
+
+.Offer-detail-page .offer-item-content .offer-item-title,
+.loyalty-detail-page .loyalty-item-content .loyalty-item-title {
+  font-size: 2rem;
+}
+
+.Offer-detail-page .offer-item-content .offer-item-barcode,
+.Offer-detail-page .offer-item-content .offer-item-text,
+.loyalty-detail-page .loyalty-item-content .loyalty-item-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.Offer-detail-page .offer-item-text {
+  color: #383838;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.Offer-detail-page .offer-item-content .offer-Nutritional-info-title,
+.loyalty-detail-page .loyalty-item-content .loyalty-item-product {
+  font-size: 1.5rem;
+  color: #2b276d;
+}
+
+.loyalty-detail-page .loyalty-item-content .OfferCard .card-title {
+  color: black;
+  font-size: 1rem;
+}
+
+.loyalty-detail-page .loyalty-item-content .react-multi-carousel-list button {
+  background: #23a6d5 !important;
+}
+
+.Offer-detail-page .offer-item-content .list-group div {
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #9d9d9d;
+}
+
+.Offer-detail-page .offer-item-img ul.control-dots,
+.Offer-detail-page .offer-item-img p.carousel-status {
+  display: none;
+}
+
+.Offer-detail-page .offer-item-countdown {
+  border: 3px dashed;
+  border-radius: 21px;
+  margin-top: 3rem;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.Offer-detail-page .offer-item-countdown-text,
+.Offer-detail-page .flip-countdown-title {
+  color: #2B276D;
+}
+
+.Offer-detail-page .offer-item-countdown-text {
+  font-size: 1.5rem;
+}
+
+.Offer-detail-page .card .card-title,
+.loyalty-detail-page .card .card-title {
+  font-size: 1.5rem;
+  color: #2B276D; 
+  margin: 1rem 0;
+}
+
+.Offer-detail-page .card .accordion .accordion-item {
+  border-style: dashed;
+  border-width: 3px;
+  border-color: #9d9d9d;
+}
+
+.Offer-detail-page .card .accordion .accordion-item:last-child {
+  border-top: none;
+}
+
+.Offer-detail-page .card .accordion .accordion-item button {
+  font-size: 1.25rem;
+}
+
+.Offer-detail-page .card .accordion .accordion-item button::after {
+  display: none;
+}
+
+.flyers-list .flyer-item {
+  background: #ffffff6b;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+.flyers-list .flyer-item img {
+  width: 100%;
+}
+
+.flyers-list .flyer-item h4 {
+  color: #090909;
+}
+
+.flyers-list .flyer-item p {
+  color: #303030;
 }
