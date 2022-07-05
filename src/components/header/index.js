@@ -27,7 +27,6 @@ function Header () {
                     <Nav className="mx-auto">
                         <Nav.Link href="/offers" className="px-2 mx-3 text-center">Offers</Nav.Link>
                         <Nav.Link href="/loyalties" className="px-2 mx-3 text-center">Loyalty</Nav.Link>
-                        {/* <Nav.Link href="" className="px-2 mx-3 text-center">Surveys</Nav.Link> */}
                         <Nav.Link href="/flyers" className="px-2 mx-3 text-center">Flyers</Nav.Link>
                     </Nav>
                     <Nav>
